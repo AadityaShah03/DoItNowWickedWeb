@@ -45,11 +45,16 @@ function renderTaskList() {
 		// Give it this task's text
 		li.textContent = task + " made on "+ day;
 
+		li.onclick = function(e){
+			list.remove(e.target);
+		}
 		// Append it to the list
 		list.append(li);
 	});
 }
-function removeItem() {
-	// Declaring a variable to get select element
-	list.remove(li);
+
+
+function removeAllItems() {
+	list.innerHTML = "";
 }
+
