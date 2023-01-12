@@ -41,8 +41,9 @@ function renderTaskList() {
 		// Create a list item element
 		const li = document.createElement("li");
 
+		const day = new Date().toISOString().slice(0, 10);
 		// Give it this task's text
-		li.textContent = task;
+		li.textContent = task + " made on "+ day;
 
 		// Append it to the list
 		list.append(li);
