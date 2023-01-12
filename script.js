@@ -48,4 +48,8 @@ function renderTaskList() {
 		// Append it to the list
 		list.append(li);
 	});
+function removeItem() {
+	// Declaring a variable to get select element
+	list.remove(li);
+}
 }
