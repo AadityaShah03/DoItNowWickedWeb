@@ -22,6 +22,8 @@ form.addEventListener("submit", event => {
 	// Add the input value to the tasks list
 	tasks.push(value);
 
+	tasks.reverse();
+
 	// Render the task list
 	renderTaskList();
 
