@@ -44,5 +44,6 @@ function renderTaskList() {
 
 		// Append it to the list
 		list.append(li);
+		list.reverse();
 	});
 }
